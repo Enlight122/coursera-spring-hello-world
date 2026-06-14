@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "80:80"
+    container_name: coursera-spring-app
+    restart: unless-stopped
